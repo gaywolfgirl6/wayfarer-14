@@ -1,0 +1,42 @@
+﻿# Author Info
+# GitHub: ???
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Cigarette Butt
+  parent: BaseVessel
+  name: GE Cigarette Butt
+  description: A meteorite that meets the absolute basic minimum standards of what a shuttle is. Not FDA approved.
+  price: 12113
+  category: Small
+  group: Scrap
+  shuttlePath: /Maps/_WF/Shuttles/Scrapyard/cigarettebutt.yml
+  guidebookPage: Null
+  class:
+  - Scrapyard
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Cigarette Butt
+  mapName: 'GE Cigarette Butt'
+  mapPath: /Maps/_WF/Shuttles/Scrapyard/cigarettebutt.yml
+  minPlayers: 0
+  stations:
+    Cigarette Butt:
+      stationProto: StandardFrontierVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Cigarette Butt SCAV{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          WayfarerInterview: [ 0, 0 ]
