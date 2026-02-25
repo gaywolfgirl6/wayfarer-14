@@ -1,0 +1,32 @@
+﻿- type: vessel
+  id: Furnace
+  parent: BaseVessel
+  name: GE Furnace
+  description:
+  price: 78280
+  category: Large
+  group: Shipyard
+  shuttlePath: /Maps/_WF/Shuttles/Civilian/hauler.yml
+  guidebookPage: Null
+  class:
+  - Atmospherics
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Furnace
+  mapName: 'Furnace'
+  mapPath: /Maps/_WF/Shuttles/Civilian/furnace.yml
+  minPlayers: 0
+  stations:
+    Furnace:
+      stationProto: StandardFrontierVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Furnace CIV{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          WayfarerInterview: [ 0, 0 ]
