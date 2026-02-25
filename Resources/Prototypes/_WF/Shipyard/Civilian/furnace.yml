@@ -2,7 +2,7 @@
   id: Furnace
   parent: BaseVessel
   name: GE Furnace
-  description:
+  description: A restored early era Atmospherics Shuttle for corporate useage, restored to earlier functionality.
   price: 78280
   category: Large
   group: Shipyard
