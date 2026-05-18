@@ -3517,3 +3517,10 @@ Entries:
   id: 6897
   time: '2026-05-18T16:11:15.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/913
+- author: VVersengt
+  changes:
+    - type: Remove
+      message: Removed randomized weapon stats.
+  id: 6898
+  time: '2026-05-18T18:58:16.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/921
