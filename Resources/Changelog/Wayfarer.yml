@@ -3488,3 +3488,10 @@ Entries:
   id: 6894
   time: '2026-05-18T16:04:52.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/893
+- author: Khaomi
+  changes:
+    - type: Add
+      message: Added Ship name to Ship Out Of Character
+  id: 6895
+  time: '2026-05-18T16:08:41.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/898
