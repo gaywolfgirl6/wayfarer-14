@@ -3495,3 +3495,18 @@ Entries:
   id: 6895
   time: '2026-05-18T16:08:41.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/898
+- author: Luweth
+  changes:
+    - type: Add
+      message: Added Aurelian Beret variants
+    - type: Add
+      message: Added Aurelian Goggle/Hud/Glasses variants
+    - type: Add
+      message: Added Aurelian Bandana variants
+    - type: Add
+      message: Added Aurelian Tail Layering variants
+    - type: Add
+      message: Added Aurelian Paramed variant
+  id: 6896
+  time: '2026-05-18T16:10:29.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/920
