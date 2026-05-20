@@ -3535,3 +3535,10 @@ Entries:
   id: 6899
   time: '2026-05-19T01:46:34.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/923
+- author: Khaomi
+  changes:
+    - type: Fix
+      message: Avali not being carryable
+  id: 6900
+  time: '2026-05-20T11:12:24.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/930
