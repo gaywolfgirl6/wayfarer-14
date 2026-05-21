@@ -3572,3 +3572,12 @@ Entries:
   id: 6904
   time: '2026-05-21T16:59:56.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/927
+- author: Whisper
+  changes:
+    - type: Add
+      message: All mobs should be carriable, but their weights will still apply.
+    - type: Tweak
+      message: Synthetics (IPCs) now weigh the same as humans (heavier).
+  id: 6905
+  time: '2026-05-21T22:05:05.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/932
