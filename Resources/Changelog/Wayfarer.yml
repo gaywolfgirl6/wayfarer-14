@@ -3558,3 +3558,10 @@ Entries:
   id: 6902
   time: '2026-05-21T14:11:39.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/939
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Damage cap system. All races -should- have this by default.
+  id: 6903
+  time: '2026-05-21T16:59:28.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/929
