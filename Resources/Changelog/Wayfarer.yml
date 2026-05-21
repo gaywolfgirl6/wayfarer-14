@@ -3542,3 +3542,12 @@ Entries:
   id: 6900
   time: '2026-05-20T11:12:24.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/930
+- author: Luweth
+  changes:
+    - type: Add
+      message: Added Aurelian meatbrain and tongues.
+    - type: Tweak
+      message: Adjusted Aurelian Density(mass/weight).
+  id: 6901
+  time: '2026-05-21T14:10:44.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/933
