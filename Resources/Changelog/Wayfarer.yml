@@ -3624,3 +3624,12 @@ Entries:
   id: 6910
   time: '2026-05-22T04:41:02.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/940
+- author: DevArchwave
+  changes:
+    - type: Remove
+      message: >-
+        Removed the need for a whitelist to play plant manager. Kept the general
+        hourly requirement.
+  id: 6911
+  time: '2026-05-22T19:36:48.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/957
