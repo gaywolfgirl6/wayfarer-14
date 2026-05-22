@@ -3654,3 +3654,10 @@ Entries:
   id: 6914
   time: '2026-05-22T22:59:52.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/926
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: The Nuclear Reactor. RBMKs don't explode. You're delusional.
+  id: 6915
+  time: '2026-05-22T23:00:31.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/895
