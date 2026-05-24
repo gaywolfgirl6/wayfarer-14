@@ -2,7 +2,7 @@
   id: Behir
   parent: BaseVessel
   name: DIRE Behir
-  description:  Once abandoned large cargo vessel, retrofit to survive the toughest expeditions.
+  description:  Once abandoned large cargo vessel, repurposed to survive the toughest expeditions.
   price: 85180
   category: Large
   group: Expedition
@@ -21,7 +21,7 @@
   minPlayers: 0
   stations:
     Behir:
-      stationProto: StandardFrontierVessel
+      stationProto: StandardFrontierExpeditionVessel
       components:
       - type: StationNameSetup
         mapNameTemplate: 'Behir EXP{1}'

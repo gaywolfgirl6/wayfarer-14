@@ -21,7 +21,7 @@
   minPlayers: 0
   stations:
     Hellbat:
-      stationProto: StandardFrontierVessel
+      stationProto: StandardFrontierExpeditionVessel
       components:
       - type: StationNameSetup
         mapNameTemplate: 'Hellbat EXP{1}'
