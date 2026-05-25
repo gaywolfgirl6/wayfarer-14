@@ -3844,3 +3844,10 @@ Entries:
   id: 6938
   time: '2026-05-25T22:17:22.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/995
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Fixed the inability to wear a bluespace air tank with a tank harness.
+  id: 6939
+  time: '2026-05-25T22:18:01.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/996
