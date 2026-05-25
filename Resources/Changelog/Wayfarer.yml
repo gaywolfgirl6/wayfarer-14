@@ -3709,3 +3709,12 @@ Entries:
   id: 6921
   time: '2026-05-25T01:20:03.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/965
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Added RPDs to the loadout.
+    - type: Fix
+      message: Fixed RPDs missing from the POI engivends.
+  id: 6922
+  time: '2026-05-25T01:21:04.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/966
