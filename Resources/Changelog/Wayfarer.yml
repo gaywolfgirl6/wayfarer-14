@@ -3782,3 +3782,10 @@ Entries:
   id: 6930
   time: '2026-05-25T20:46:16.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/991
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Solars auto-track on start now. This is a temporary bandaid.
+  id: 6931
+  time: '2026-05-25T20:47:02.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/994
