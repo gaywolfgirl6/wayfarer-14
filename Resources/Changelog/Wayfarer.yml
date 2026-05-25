@@ -3773,3 +3773,12 @@ Entries:
   id: 6929
   time: '2026-05-25T20:45:40.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/988
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: >-
+        Some songs were shuffled around, added and removed from the ambient
+        music system. Give it a try.
+  id: 6930
+  time: '2026-05-25T20:46:16.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/991
