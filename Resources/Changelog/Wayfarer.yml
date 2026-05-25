@@ -3835,3 +3835,12 @@ Entries:
   id: 6937
   time: '2026-05-25T22:13:39.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/992
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: >-
+        Ovinia have received some more sprites from their upstream, and some
+        fixes.
+  id: 6938
+  time: '2026-05-25T22:17:22.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/995
