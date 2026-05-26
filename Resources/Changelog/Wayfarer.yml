@@ -3876,3 +3876,10 @@ Entries:
   id: 6942
   time: '2026-05-26T00:58:53.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/998
+- author: Nnelg
+  changes:
+    - type: Add
+      message: Added a bigger janitor ship, the Moppet
+  id: 6943
+  time: '2026-05-26T01:02:22.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/815
