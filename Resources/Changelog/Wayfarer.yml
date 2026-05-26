@@ -3867,3 +3867,12 @@ Entries:
   id: 6941
   time: '2026-05-26T00:41:47.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/1006
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Added constructible wallmount storage lockers with grid storage
+    - type: Add
+      message: Defibrillator cabinets can now be constructed and deconstructed.
+  id: 6942
+  time: '2026-05-26T00:58:53.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/998
