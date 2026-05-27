@@ -29,6 +29,13 @@
     ears: ClothingHeadsetAltSecurityCommon
 
 - type: loadout
+  id: WFClothingHeadsetClear
+  price: 0
+  equipment:
+    ears: WFClothingHeadsetClear
+
+
+- type: loadout
   id: WFClothingHeadsetCargoCommon
   price: 250
   equipment:

@@ -15,14 +15,14 @@
   - NFPirateJumpskirt
 
 - type: loadoutGroup
-  id: OutlawPDA #WF change
+  id: WFOutlawPDA #WF change
   name: loadout-group-contractor-pda
   loadouts:
-  - OutlawOutlawPDA #WF change
-  subgroups:
-  - WFPDA
+  - WFOutlawPDA #WF change
+#  subgroups: # Wayfarer: Outlaws get Chamelon PDAs
+#  - WFPDA
   fallbacks:
-  - OutlawOutlawPDA #WF change
+  - WFOutlawPDA #WF change
 
 - type: loadoutGroup
   id: NFPirateFace
@@ -82,6 +82,26 @@
   subgroups:
   - WFBackpackItems
 
+# == RADIO KEYS - Wayfarer
+- type: loadoutGroup
+  id: OutlawEncryptionKey
+  name: loadout-group-contractor-encryption-key
+  minLimit: 0
+  maxLimit: 8 # Wayfarer: 6<8
+  loadouts:
+  # Wayfarer: Wait, why are these here? Shouldn't this loadout be in the WF loadout groups?
+  - WFEncryptionKeyTraffic
+  - WFEncryptionKeyMedical
+  - WFEncryptionKeyCargo
+  - WFEncryptionKeyEngineering
+  - WFEncryptionKeyScience
+  - EncryptionKeyFreelance
+  - WFEncryptionKeyHorny
+  - WFEncryptionKeyExtremeKink
+  fallbacks:
+  - WFEncryptionKeyTraffic
+  # End Wayfarer
+
 # Pirate Captain loadouts
 
 - type: loadoutGroup
@@ -109,14 +129,14 @@
   - NFPirateCaptainClothingOuterCoatPirate
 
 - type: loadoutGroup
-  id: WantedOutlawPDA #WF change
+  id: WFWantedOutlawPDA #WF change
   name: loadout-group-contractor-pda
   loadouts:
-  - WantedOutlawWantedOutlawPDA #WF change
-  subgroups:
-  - WFPDA
+  - WFWantedOutlawPDA #WF change
+#  subgroups: # Wayfarer: Outlaws get Chamelon PDAs
+#  - WFPDA
   fallbacks:
-  - WantedOutlawWantedOutlawPDA #WF change
+  - WFWantedOutlawPDA #WF change
 
 - type: loadoutGroup
   id: PirateCaptainWallet

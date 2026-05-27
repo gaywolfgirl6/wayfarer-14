@@ -12,6 +12,13 @@
     back:
     - ClothingMaskBreathMedical
 
+- type: loadout
+  id: WFClothingMaskClear
+  price: 0
+  storage:
+    back:
+    - WFClothingMaskClear
+
 #T1
 - type: loadout
   id: WFClothingMaskSterile
@@ -34,6 +41,12 @@
   storage:
     back:
     - ClothingMaskPunkHalf
+
+- type: loadout
+  id: WFClothingMaskClownNose
+  price: 500
+  equipment:
+    mask: ClothingMaskClownNose
 
 #T2
 - type: loadout

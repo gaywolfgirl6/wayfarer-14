@@ -31,7 +31,7 @@ public sealed class SizeManipulationSystem : EntitySystem
         base.Initialize();
 
         _sawmill = Logger.GetSawmill("size_manipulator");
-        
+
         SubscribeLocalEvent<SizeAffectedComponent, ExaminedEvent>(OnExamined);
     }
 
@@ -46,14 +46,51 @@ public sealed class SizeManipulationSystem : EntitySystem
         string message;
         if (totalScale > 1.0f)
         {
-            message = Loc.GetString("size-manipulator-examine-bigger", ("scale", totalScale.ToString("F2")));
+            message = Loc.GetString("size-manipulator-examine-bigger", [("target", uid), ("scale", totalScale.ToString("F2"))]);
         }
         else
         {
-            message = Loc.GetString("size-manipulator-examine-smaller", ("scale", totalScale.ToString("F2")));
+            message = Loc.GetString("size-manipulator-examine-smaller", [("target", uid), ("scale", totalScale.ToString("F2"))]);
         }
-        
+
         args.PushMarkup($"[color=gray]{message}[/color]");
+    }
+
+    /// <summary>
+    /// Applies a size change to the target entity, bypassing the consent check.
+    /// Intended for trait-driven mechanics like Clay Body where consent does not apply.
+    /// </summary>
+    public bool TryChangeSizeForced(EntityUid target, SizeManipulatorMode mode, EntityUid? user = null)
+    {
+        if (!HasComp<MobStateComponent>(target))
+            return false;
+
+        var sizeComp = EnsureComp<SizeAffectedComponent>(target);
+
+        float newScale;
+        if (mode == SizeManipulatorMode.Grow)
+        {
+            newScale = sizeComp.ScaleMultiplier + sizeComp.ScaleChangeAmount;
+            if (newScale > sizeComp.MaxScale)
+                return false;
+        }
+        else
+        {
+            newScale = sizeComp.ScaleMultiplier - sizeComp.ScaleChangeAmount;
+            if (newScale < sizeComp.MinScale)
+                return false;
+        }
+
+        sizeComp.ScaleMultiplier = newScale;
+        Dirty(target, sizeComp);
+        ApplyPhysicsScale(target, newScale, sizeComp.BaseScale);
+
+        var message = mode == SizeManipulatorMode.Grow
+            ? Loc.GetString("size-manipulator-target-grow")
+            : Loc.GetString("size-manipulator-target-shrink");
+        _popup.PopupEntity(message, target, PopupType.Medium);
+
+        return true;
     }
 
     /// <summary>
@@ -187,7 +224,7 @@ public sealed class SizeManipulationSystem : EntitySystem
                     // Scale all vertices by the total scale from the original vertices
                     var originalVerts = sizeComp.OriginalFixtureVertices[id];
                     var scaledVerts = new Vector2[originalVerts.Length];
-                    
+
                     for (int i = 0; i < originalVerts.Length; i++)
                     {
                         scaledVerts[i] = originalVerts[i] * totalScale;
@@ -212,7 +249,7 @@ public sealed class SizeManipulationSystem : EntitySystem
             // we need to scale density by scale to achieve scale³ mass scaling
             var originalDensity = sizeComp.OriginalFixtureDensities[id];
             var newDensity = originalDensity * totalScale;
-            
+
             // Only update density if it changed significantly
             if (Math.Abs(fixture.Density - newDensity) > 0.001f)
             {
@@ -224,7 +261,7 @@ public sealed class SizeManipulationSystem : EntitySystem
 
         // Recalculate mass data once after all fixtures have been scaled
         _physics.ResetMassData(target, fixtures);
-        
+
         if (TryComp<PhysicsComponent>(target, out var physicsComp))
         {
             _sawmill.Debug($"SizeManipulation: New mass for {ToPrettyString(target)} is {physicsComp.Mass} kg (scale: {totalScale})");

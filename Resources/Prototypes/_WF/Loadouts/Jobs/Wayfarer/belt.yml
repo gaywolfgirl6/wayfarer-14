@@ -115,6 +115,12 @@
     belt: ClothingBeltHolster
 
 - type: loadout
+  id: ClothingBeltSyndieHolster
+  price: 2500
+  equipment:
+    belt: ClothingBeltSyndieHolster
+
+- type: loadout
   id: WFClothingBeltChaplainSash
   price: 750
   equipment:
@@ -241,3 +247,9 @@
   price: 2000
   equipment:
     belt: ClothingBeltChaplainDragon
+
+- type: loadout
+  id: ClothingBeltAssault
+  price: 2000
+  equipment:
+    belt: ClothingBeltAssault

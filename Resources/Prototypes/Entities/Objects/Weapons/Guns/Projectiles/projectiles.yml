@@ -803,6 +803,10 @@
     radius: 3.5
     color: orange
     energy: 0.5
+  - type: RadarBlip # Wayfarer: Add Radar Blip
+    scale: 2
+    shape: Triangle
+    visibleFromOtherGrids: true
 
 - type: entity
   id: BulletWeakRocket
@@ -825,6 +829,10 @@
     radius: 3.5
     color: orange
     energy: 0.5
+  - type: RadarBlip # Wayfarer: Add Radar Blip
+    scale: 2
+    shape: Triangle
+    visibleFromOtherGrids: true
 
 - type: entity
   id: BulletGrenadeBaton
@@ -863,6 +871,10 @@
     intensitySlope: 5
     maxIntensity: 10
     canCreateVacuum: false
+  - type: RadarBlip # Wayfarer: Add Radar Blip
+    scale: 2
+    shape: Triangle
+    visibleFromOtherGrids: true
 
 - type: entity
   id: BulletGrenadeFlash
@@ -878,8 +890,6 @@
     range: 7
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
-  - type: ActiveTimerTrigger
-    timeRemaining: 0.3
   - type: DeleteOnTrigger
 
 - type: entity
@@ -905,6 +915,10 @@
   - type: ProjectileGrenade
     fillPrototype: NFPelletClusterLessLethal # Frontier: use NF variant
     capacity: 30
+  - type: RadarBlip # Wayfarer: Add Radar Blip
+    scale: 2
+    shape: Triangle
+    visibleFromOtherGrids: true
 
 - type: entity
   parent: BaseBulletTrigger
@@ -916,8 +930,6 @@
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: cleanade
-  - type: ActiveTimerTrigger
-    timeRemaining: 0.3
   - type: SmokeOnTrigger
     duration: 3.5
     spreadAmount: 30
@@ -926,8 +938,9 @@
       reagents:
       - ReagentId: SpaceCleaner
         Quantity: 30
-  - type: SoundOnTrigger
+  - type: EmitSoundOnTrigger
     sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -956,6 +969,11 @@
     radius: 3.5
     color: blue
     energy: 0.5
+  - type: RadarBlip # Wayfarer: Add Radar Blip
+    scale: 2
+    shape: Triangle
+    visibleFromOtherGrids: true
+    radarColor: '#00FFFF' # EMP
 
 - type: entity
   id: BulletCap
@@ -1065,6 +1083,10 @@
     radius: 1
     color: orange
     energy: 0.5
+  - type: RadarBlip # Wayfarer: Add Radar Blip
+    scale: 2
+    shape: Triangle
+    visibleFromOtherGrids: true
 
 - type: entity
   id: GrapplingHook

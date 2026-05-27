@@ -140,7 +140,6 @@
   - ContractorClothingUniformJumpskirtResearchDirector
   - ContractorClothingUniformJumpsuitSeniorEngineer
   - ContractorClothingUniformJumpskirtSeniorEngineer
-  - ContractorClothingUniformJumpsuitChiefEngineerNT
   - ContractorClothingUniformJumpsuitChiefEngineer
   - ContractorClothingUniformJumpskirtChiefEngineer
   - ContractorClothingUniformJumpsuitChiefEngineerTurtle
@@ -830,7 +829,6 @@
   - ContractorCrayonBox
   - ContractorSoapNT
   - PlushieLizard
-  - WehfarerPlushie
   - ContractorPlushieSharkGrey
   - ContractorPlushieSharkBlue
   - ContractorPlushieSharkPink
@@ -974,7 +972,7 @@
   - ContractorLightImplanter
   - ContractorBikeHornImplanter
   - ContractorSadTromboneImplanter
-  - ContractorMimePowersImplanter
-  - ContractorBibleUserImplanter
+  #- ContractorMimePowersImplanter # Wayfarer: Mime vow implanter removed, replaced by the new Mime trait
+  #- ContractorBibleUserImplanter # Wayfarer: Faith implanter removed, covered by the existing Pious trait
   fallbacks:
   - ContractorMedicalTrackingImplanter

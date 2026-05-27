@@ -1,29 +1,29 @@
 ﻿- type: vessel
-  id: Mephit
+  id: Beater
   parent: BaseVessel
-  name: DIRE Mephit
-  description: A meteorite that meets the absolute basic minimum standards of what a shuttle is. Not SSI approved.
-  price: 15460
+  name: GE Beater
+  description: A meteorite that meets the absolute basic minimum standards of what a shuttle is. Not FDA approved.
+  price: 12110
   category: Small
   group: Scrap
-  shuttlePath: /Maps/_WF/Shuttles/Scrapyard/mephit.yml
-  guidebookPage: Null
+  shuttlePath: /Maps/_WF/Shuttles/Scrapyard/beater.yml
+  guidebookPage: ShipyardBeater
   class:
   - Scrapyard
   engine:
   - Plasma
 
 - type: gameMap
-  id: Mephit
-  mapName: 'DIRE Mephit'
-  mapPath: /Maps/_WF/Shuttles/Scrapyard/mephit.yml
+  id: Beater
+  mapName: 'GE Beater'
+  mapPath: /Maps/_WF/Shuttles/Scrapyard/beater.yml
   minPlayers: 0
   stations:
-    Mephit:
+    Beater:
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Mephit SCAV{1}'
+        mapNameTemplate: 'Beater SCAV{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

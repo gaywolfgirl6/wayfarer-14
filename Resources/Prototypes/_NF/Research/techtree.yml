@@ -185,6 +185,7 @@
   tier: 1
   cost: 10000
   recipeUnlocks:
+  - ShipyardRPD # Wayfarer
   - ShipyardRCD
   - ShipyardRCDAmmo
   technologyPrerequisites:
@@ -516,6 +517,22 @@
   technologyPrerequisites:
   - NFReinforcedJug
   position: 0, 10
+
+# WF - Add cloning
+- type: technology
+  id: WFCloning
+  name: nf-research-technology-cloning
+  entityIcon: CloningPod
+  discipline: NFMedical
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - CloningPodMachineCircuitboard
+  - CloningConsoleComputerCircuitboard
+  - MedicalScannerMachineCircuitboard
+  technologyPrerequisites:
+  - NFAppliedBiochemicalStasis
+  position: 4, 11
 
 - type: technology
   id: NFReinforcedJug
@@ -1379,6 +1396,7 @@
   recipeUnlocks:
   - ThrusterMachineCircuitboard
   - GyroscopeMachineCircuitboard
+  - LargeThrusterMachineCircuitboard # Wayfarer
   prerequisiteLineType: Diagonal
   technologyPrerequisites:
   - NFSpaceScanning
@@ -1424,6 +1442,7 @@
   cost: 7500
   recipeUnlocks:
   - HolofanProjector
+  - RadiationBlockingProjector # Far Horizons
 #  - FireExtinguisherBluespace # DeltaV
   technologyPrerequisites:
   - NFAtmosphericTech

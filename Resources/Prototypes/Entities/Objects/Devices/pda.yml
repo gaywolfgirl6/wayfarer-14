@@ -926,72 +926,72 @@
   - type: BlipCartridge
     defaultPreset: BlipPresetScience
 
-#- type: entity
-#  parent: BaseSecurityPDA
-#  id: HoSPDA
-#  name: head of security PDA
-#  description: Whosoever bears this PDA is the law.
-#  components:
-#  - type: Pda
-#    id: HoSIDCard
-#  - type: Appearance
-#    appearanceDataInit:
-#     enum.PdaVisuals.PdaType:
-#       !type:String
-#       pda-hos
-#  - type: PdaBorderColor
-#    borderColor: "#A32D26"
-#    accentHColor: "#447987"
-#  - type: Icon
-#    state: pda-hos
-#  - type: CartridgeLoader
-#    preinstalled:
-#    - CrewManifestCartridge
-#    - NotekeeperCartridge
-#    - NanoTaskCartridge
-#    - NewsReaderCartridge
-#    - WantedListCartridge
-#    - LogProbeCartridge
-#    - NanoChatCartridge # DeltaV
-#  - type: BlipCartridge
-#    defaultPreset: BlipPresetCommand
+- type: entity
+  parent: BaseSecurityPDA
+  id: HoSPDA
+  name: head of security PDA
+  description: Whosoever bears this PDA is the law.
+  components:
+  - type: Pda
+    id: HoSIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-hos
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
+  - type: Icon
+    state: pda-hos
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - WantedListCartridge
+    - LogProbeCartridge
+    - NanoChatCartridge # DeltaV
+  - type: BlipCartridge
+    defaultPreset: BlipPresetCommand
 
-#- type: entity
-#  parent: BaseSecurityPDA
-#  id: WardenPDA
-#  name: warden PDA
-#  description: The OS appears to have been jailbroken.
-#  components:
-#  - type: Pda
-#    id: WardenIDCard
-#  - type: Appearance
-#    appearanceDataInit:
-#     enum.PdaVisuals.PdaType:
-#       !type:String
-#       pda-warden
-#  - type: PdaBorderColor
-#    borderColor: "#A32D26"
-#    accentVColor: "#949137"
-#  - type: Icon
-#    state: pda-warden
+- type: entity
+  parent: BaseSecurityPDA
+  id: WardenPDA
+  name: warden PDA
+  description: The OS appears to have been jailbroken.
+  components:
+  - type: Pda
+    id: WardenIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-warden
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#949137"
+  - type: Icon
+    state: pda-warden
 
-#- type: entity
-#  parent: BaseSecurityPDA
-#  id: SecurityPDA
-#  name: security PDA
-#  description: Red to hide the stains of passenger blood.
- # components:
-#  - type: Pda
-#    id: SecurityIDCard
-#  - type: Appearance
-#    appearanceDataInit:
-#     enum.PdaVisuals.PdaType:
-#       !type:String
-#       pda-security
-#  - type: PdaBorderColor
-#    borderColor: "#A32D26"
-#  - type: Icon
-#    state: pda-security
+- type: entity
+  parent: BaseSecurityPDA
+  id: SecurityPDA
+  name: security PDA
+  description: Red to hide the stains of passenger blood.
+  components:
+  - type: Pda
+    id: SecurityIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-security
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+  - type: Icon
+    state: pda-security
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1160,10 +1160,10 @@
     - DoorBumpOpener
 
 - type: entity
-  parent: [ BasePDA, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContrabandNoValue
+  parent: [ BasePDA ] # Wayfarer: Removed Contraband
   id: SyndiPDA
-  name: syndicate PDA
-  description: Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
+  name: red PDA # Wayfarer: Renamed
+  description: 99 and 44/100ths percent pure plastic. # Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people! # Wayfarer
   components:
   - type: Pda
     id: SyndicateIDCard
@@ -1179,10 +1179,14 @@
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
+      - CrewManifestCartridge # Wayfarer
       - NotekeeperCartridge
       - NanoChatCartridge # DeltaV
       - NanoTaskCartridge
+      - NewsReaderCartridge # Wayfarer
+      - BountyContractsCartridge # Wayfarer
       - AstroNavCartridge # Frontier
+      - BlipCartridge # Frontier
   - type: BlipCartridge
     defaultPreset: BlipPresetPirate
 
@@ -1510,27 +1514,27 @@
   - type: Icon
     state: pda-seniorphysician
 
-#- type: entity
-#  parent: BaseSecurityPDA
-#  id: SeniorOfficerPDA
-#  name: senior officer PDA
-#  description: Beaten, battered and broken, but just barely useable.
-#  components:
-#  - type: Pda
-#    id: SeniorOfficerIDCard
-#  - type: Appearance
-#    appearanceDataInit:
-#     enum.PdaVisuals.PdaType:
-#       !type:String
-#       pda-seniorofficer
-#  - type: PdaBorderColor
-#    borderColor: "#A32D26"
-#    accentVColor: "#DFDFDF"
-#  - type: Icon
-#    state: pda-seniorofficer
+- type: entity
+  parent: BaseSecurityPDA
+  id: SeniorOfficerPDA
+  name: senior officer PDA
+  description: Beaten, battered and broken, but just barely useable.
+  components:
+  - type: Pda
+    id: SeniorOfficerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-seniorofficer
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#DFDFDF"
+  - type: Icon
+    state: pda-seniorofficer
 
 - type: entity
-  parent: [ BaseC3PirateContrabandNoValue, SyndiPDA ] # Frontier: BaseMajorContraband<BaseC3PirateContrabandNoValue
+  parent: [ SyndiPDA ] # WF Removed Contraband
   id: PiratePDA
   name: pirate PDA
   description: Yargh!
@@ -1549,10 +1553,10 @@
     defaultPreset: BlipPresetPirate
 
 - type: entity
-  parent: [ BaseMedicalPDA, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContrabandNoValue
+  parent: [ BaseMedicalPDA ] # Wayfarer: Removed Contraband
   id: SyndiAgentPDA
-  name: syndicate corpsman PDA
-  description: For those days when healing normal syndicates aren't enough, try healing nuclear operatives instead!
+  name: red corpsman PDA # Wayfarer: Renamed
+  description: Frozen from so many deep space rescues. #For those days when healing normal syndicates aren't enough, try healing nuclear operatives instead! # Wayfarer
   components:
   - type: Pda
     id: SyndicateIDCard
@@ -1568,13 +1572,17 @@
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
+      - CrewManifestCartridge # Wayfarer
       - NotekeeperCartridge
-      - NanoTaskCartridge
-      - MedTekCartridge
       - NanoChatCartridge # DeltaV
+      - NanoTaskCartridge
+      - NewsReaderCartridge # Wayfarer
+      - BountyContractsCartridge # Wayfarer
+      - AstroNavCartridge # Frontier
+      - BlipCartridge # Frontier
 
 - type: entity
-  parent: BasePDA
+  parent: [BasePDA, SelectableLock]
   id: ChameleonPDA
   name: wayfarer PDA # WF passenger<Wayfarer
   description: Why isn't it gray?

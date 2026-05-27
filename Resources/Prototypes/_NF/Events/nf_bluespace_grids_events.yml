@@ -18,6 +18,11 @@
     reoccurrenceDelay: 360 # 6 hours
     requiredJobs:
       Sheriff: 1
+    # Wayfarer: Cache/Vault group universal Timer
+    wayfareCacheGroup: Caches
+    wayfareCacheGroupMins: 120
+    # Wayfarer: End timer
+    
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -28,7 +33,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
           color: "#E10F9B"
         - type: Shuttle
@@ -61,6 +66,10 @@
     reoccurrenceDelay: 360 # 6 hours
     requiredJobs:
       Sheriff: 1
+    # Wayfarer: Cache/Vault group universal Timer
+    wayfareCacheGroup: Caches
+    wayfareCacheGroupMins: 120
+    # Wayfarer: End Timer
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -71,7 +80,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
           color: "#E10F9B"
         - type: LinkedLifecycleGridParent
@@ -85,7 +94,7 @@
       Nfsd: 0.25
       Frontier: 0.25
       Medical: 0.25
-      Edison: 0.25
+    #  Edison: 0.25 Wayfayer: Edison should make it's own money.
 
 - type: entity
   id: BluespaceVaultSmallError
@@ -107,6 +116,10 @@
     reoccurrenceDelay: 360 # 6 hours
     requiredJobs:
       Sheriff: 1
+    # Wayfarer: Cache/Vault group universal Timer
+    wayfareCacheGroup: Caches
+    wayfareCacheGroupMins: 120
+    # Wayfarer: End timer
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -117,7 +130,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
           color: "#E10F9B"
         - type: LinkedLifecycleGridParent
@@ -131,7 +144,7 @@
       Nfsd: 0.25
       Frontier: 0.25
       Medical: 0.25
-      Edison: 0.25
+    #  Edison: 0.25 Wayfayer: Edison should make it's own money.
 
 - type: entity
   id: BluespaceSyndicateFTLInterception
@@ -161,7 +174,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
           color: "#E10F9B"
         - type: LinkedLifecycleGridParent
@@ -200,7 +213,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
           color: "#E10F9B"
         - type: LinkedLifecycleGridParent
@@ -239,7 +252,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
           color: "#E10F9B"
         - type: LinkedLifecycleGridParent
@@ -266,7 +279,8 @@
     weight: 1
     duration: 1800
     maxDuration: 2400
-    maxOccurrences: 1
+    reoccurrenceDelay: 180 # 3 hours
+#    maxOccurrences: 1 # Wayfarer
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -277,7 +291,7 @@
         addComponents:
         - type: Gravity
           enabled: true
-          inherent: true
+          inherent: false # Wayfarer: true<false
         - type: IFF
         - type: LinkedLifecycleGridParent
         - type: ProtectedGrid
