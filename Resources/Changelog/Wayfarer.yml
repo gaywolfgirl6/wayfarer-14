@@ -3971,3 +3971,14 @@ Entries:
   id: 6953
   time: '2026-05-28T23:53:52.0000000+00:00'
   url: https://github.com/project-wayfarer/wayfarer-14/pull/1017
+- author: Luweth
+  changes:
+    - type: Add
+      message: Added more avox glove variants.
+    - type: Add
+      message: Adjusted Vox hair variant.
+    - type: Fix
+      message: Fixed species.yml location.
+  id: 6954
+  time: '2026-05-28T23:54:17.0000000+00:00'
+  url: https://github.com/project-wayfarer/wayfarer-14/pull/1032
