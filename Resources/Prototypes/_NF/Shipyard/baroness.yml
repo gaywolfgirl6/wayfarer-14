@@ -6,8 +6,6 @@
 # GitHub: arimah
 # Discord: arimah
 
-# Shuttle Notes:
-#
 - type: vessel
   id: Baroness
   parent: BaseVessel
