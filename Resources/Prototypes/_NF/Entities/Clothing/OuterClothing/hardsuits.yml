@@ -384,7 +384,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitTacticalMaid
 
 - type: entity
-  parent: [BaseC3PirateContraband, ClothingOuterHardsuitBaseNF, ContrabandClothing] # Wayfarer: BaseC3PirateContraband<BaseBMContraband
+  parent: [BaseBMContraband, ClothingOuterHardsuitBaseNF, ContrabandClothing] # Wayfarer: BaseC3PirateContraband<BaseBMContraband
   id: ClothingOuterHardsuitPirateElite
   name: elite pirate hardsuit
   description: An ancient elite armored hardsuit, designed by an unknown bearded man and built like a brick house.
@@ -414,7 +414,7 @@
 
 #Rogue Suit
 - type: entity
-  parent: [BaseC3PirateContraband, ClothingOuterHardsuitBaseNF, ContrabandClothing]
+  parent: [BaseBMContraband, ClothingOuterHardsuitBaseNF, ContrabandClothing] # Wayfarer: BaseC3PirateContraband<BaseBMContraband
   id: ClothingOuterHardsuitRogue
   name: rogue suit
   description: For when you really need to put the dashing into dashing rogue.

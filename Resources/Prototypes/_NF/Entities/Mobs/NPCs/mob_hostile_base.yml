@@ -120,7 +120,7 @@
   - type: NFSalvageMobRestrictions
     addComponentsLeaveGrid:
     - type: TimedDespawn
-      lifetime: 240
+      lifetime: 15 # Wayfarer: 240<15
     - type: PassiveDamage
       allowedStates:
       - Alive

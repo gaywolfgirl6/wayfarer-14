@@ -33,7 +33,6 @@
   - DawInstrumentMachineCircuitboard
   - MassMediaCircuitboard
   - JukeboxCircuitBoard
-  - WFRadioBroadcastConsoleCircuitboard # Wayfarer
   # RoboticCleanliness
   - BorgModuleAdvancedCleaning
   - PortablePumpMachineCircuitBoard
@@ -379,7 +378,6 @@
   - DawInstrumentMachineCircuitboard
   - MassMediaCircuitboard
   - JukeboxCircuitBoard
-  - WFRadioBroadcastConsoleCircuitboard # Wayfarer
   # RoboticCleanliness
   - BorgModuleAdvancedCleaning
   - PortablePumpMachineCircuitBoard

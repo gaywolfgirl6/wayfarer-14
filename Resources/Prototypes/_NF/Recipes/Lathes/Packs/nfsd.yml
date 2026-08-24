@@ -28,6 +28,10 @@
   - NFAmmunitionBoxPistol45
   - NFAmmunitionBoxPistol45Overpressure
   - NFAmmunitionBoxPistol45Rubber
+  - NFMagazineGrenadeEmpty
+  - NFGrenadeFlash
+  - NFGrenadeEMP
+
   # Wayfarer: Pre-Loaded mags and colored mags QOL
   - NFMagazineHighCapacityPistol35Empty
   - WFMagazine35ExFilled
@@ -83,9 +87,14 @@
   - NFClothingNeckCardNfsdWrit
   - NFBaseClothingNeckHolsterThighNfsd
   - NFBaseClothingNeckSheathThighNfsd
+  - JetpackNfsd
   - NFPouchNfsd # Wayfarer
   - WFClothingOuterStraightjacket # Wayfarer
   - WFClothingMaskGasSheriff # Wayfarer
+  - ClothingMaskGasSecurity # Wayfarer
+  - WFContrabandForensicsModule # Wayfarer
+  - WFForensicScanner # Wayfarer
+  - PinpointerUniversalNF # Wayfarer
 
 - type: latheRecipePack
   id: NfsdTargetsStatic
@@ -103,8 +112,10 @@
   #- NFWeaponRevolverArgenti # Wayfarer
   #- NFWeaponPistolMk58 # Wayfarer
   #- NFWeaponShotgunDoubleBarreled # Wayfarer
+  #- NFWeaponShotgunKammerer # Wayfarer
   #- NFWeaponRifleAssaultNovaliteC1 # Wayfarer
   #- NFWeaponRifleAssaultGestio # Wayfarer
+  #- NFWeaponEnergyRifleAssaultLaserRepeater # Wayfarer
   #- WeaponPistolPollock # Wayfarer
   - NFStunbaton
   - NFWeaponEnergyPistolDisabler
@@ -138,6 +149,7 @@
   - WFGrenadeHEAT
   - WFMagazineGrenadeHEAT
   - NFGrenadeEMP
+  - WFCartridgeRocketEmp
   - NFMagazineGrenadeEMP
   - ArmorPlateLight
   - ArmorPlateMedium
@@ -149,3 +161,13 @@
   recipes:
   - GyroscopeNfsdMachineCircuitboard
   - ThrusterNfsdMachineCircuitboard
+  - WFLargeThrusterMachineCircuitboardNfsd # Wayfarer
+
+- type: latheRecipePack
+  id: NfsdReportingStatic
+  recipes:
+  - CassetteTape
+  - TapeRecorder
+  - ClothingNeckBodyCameraNFSD
+  - Gavel
+  - GavelBlock
