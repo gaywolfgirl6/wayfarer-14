@@ -3,12 +3,12 @@
 # Discord: ???
 
 # Shuttle Notes:
-# Engineering & Medical ship.
+# Engineering and Medical ship.
 - type: vessel
   id: Eagle
   parent: BaseVessel
   name: NM Eagle
-  description: "A modern, medium-sized engineering & medical vessel. Focused on responding to shuttle distress, the Eagle comes equipped to restore most crew and shuttles to good health."
+  description: "A medium-sized engineering and medical vessel. Focused on responding to shuttle distress, the Eagle comes equipped to restore most crew and shuttles to good health."
   price: 95000
   category: Medium
   group: Medical

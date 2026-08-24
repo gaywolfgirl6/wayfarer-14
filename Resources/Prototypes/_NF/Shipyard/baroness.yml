@@ -5,7 +5,6 @@
 # Maintainer Info
 # GitHub: arimah
 # Discord: arimah
-
 - type: vessel
   id: Baroness
   parent: BaseVessel
@@ -37,4 +36,6 @@
             prefixCreator: '14'
         - type: StationJobs
           availableJobs:
-            WayfarerInterview: [ 0, 0 ]
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
